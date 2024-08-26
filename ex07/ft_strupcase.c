@@ -6,7 +6,7 @@
 /*   By: gabastos <gabastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 18:27:37 by gabastos          #+#    #+#             */
-/*   Updated: 2024/08/22 14:08:46 by gabastos         ###   ########.fr       */
+/*   Updated: 2024/08/26 19:10:33 by gabastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 
 char	*ft_strupcase(char *str)
 {
+	char	*phrase;
+
+	phrase = str;
 	while (*str != '\0')
 	{
 		if (*str >= 'a' && *str <= 'z')
@@ -23,7 +26,7 @@ char	*ft_strupcase(char *str)
 		}
 		str++;
 	}
-	return (str);
+	return (phrase);
 }
 
 // int main(void)
