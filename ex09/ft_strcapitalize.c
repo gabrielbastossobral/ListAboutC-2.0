@@ -6,7 +6,7 @@
 /*   By: gabastos <gabastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/22 09:09:49 by gabastos          #+#    #+#             */
-/*   Updated: 2024/08/26 19:10:58 by gabastos         ###   ########.fr       */
+/*   Updated: 2024/08/27 12:21:12 by gabastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,13 +43,11 @@ char	*ft_strcapitalize(char *str)
 			capitalize = 0;
 		}
 		else if (*str >= 'A' && *str <= 'Z' && !capitalize)
-		{
 			*str += 32;
-		}
 		else if (!is_alpha_numeric(*str))
-		{
 			capitalize = 1;
-		}
+		else
+			capitalize = 0;
 		str++;
 	}
 	return (origin);
